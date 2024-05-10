@@ -1,0 +1,120 @@
+.header{
+    text-align: center;
+    font-family: 'Press Start 2P',cursive;
+    background-color: antiquewhite;
+    padding: 30px;
+    opacity: 0;
+    animation: SLIDEANDFADEIN 3s ease-in-out forwards;
+}
+
+@keyframes SLIDEANDFADEIN {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    to{
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
+
+body{
+    background: linear-gradient(to bottom, #8fd0ff, #f294a2);
+    min-height: 100%;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.quiz-container{
+    max-width: 600px;
+    background: antiquewhite;
+    margin:auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.progress-bar-container{
+    height: 35px;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.progress-bar{
+    height: 35px;
+    background-color:limegreen;
+    border-radius: 20px;
+    width: 50%;                             
+}
+
+.question {
+    font-family:'Press Start 2P',cursive;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+}
+
+.Start-button{
+    text-align: center;
+    margin-left: 235px;
+    font-family:'Press Start 2P',cursive;
+    width: 20%;
+}
+
+.timer{
+     background:antiquewhite; 
+    color:black;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: 60%;
+    padding: 80px 60px;
+    font-size: 48px;
+    font-weight:bold;
+    margin-top: 15px;
+    font-family: 'Press Start 2P',cursive;
+}
+
+.option-container{
+    margin: 20px;
+    height: fit-content;
+}
+
+
+
+
+.option-btn{
+    display:block;
+    width:100%;
+    margin-bottom: 5px;
+    background-color:lightpink;
+    height: 50px;
+    font-family:'Press Start 2P',cursive ;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+.option-btn:hover{
+    background-color: darksalmon;
+    
+}
+
+
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background:antiquewhite;
+    color: #000;
+}
+
+.media-player{
+    margin:auto;
+    margin-top: 40px;
+    display:block;
+}
